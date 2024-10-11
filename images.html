@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        /* Container for the image grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); /* Responsive columns */
+            gap: 16px; /* Gap between grid items */
+            padding: 16px; /* Padding around the grid */
+        }
+
+        /* Individual grid item */
+        .grid-item {
+            background-color: white; /* Box background */
+            border: 1px solid #ccc; /* Box border */
+            border-radius: 8px; /* Rounded corners */
+            overflow: hidden; /* Prevent overflow */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            transition: transform 0.2s; /* Animation effect on hover */
+        }
+
+        /* Image styles */
+        .grid-item img {
+            width: 100%; /* Make images responsive */
+            height: 100%; /* Maintain aspect ratio */
+            display: block; /* Remove bottom space under images */
+        }
+
+        /* Hover effect on grid items */
+        .grid-item:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; margin: 25px;">Image Gallery</h1>
+    <a href="http://127.0.0.1:5500/Midterm/index.html" class="main-page">< Back to Main Page</a>
+    
+    <div class="grid-container">
+        
+        <div class="grid-item">
+            <img src="images/more-images/image1.png" alt="Image 1">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image2.png" alt="Image 2">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image3.png" alt="Image 3">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image4.png" alt="Image 4">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image5.png" alt="Image 5">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image6.png" alt="Image 6">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image7.png" alt="Image 7">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image8.png" alt="Image 8">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image9.png" alt="Image 9">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image10.png" alt="Image 10">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image11.png" alt="Image 11">
+        </div>
+        <div class="grid-item">
+            <img src="images/more-images/image12.png" alt="Image 12">
+        </div>
+        
+    </div>
+
+</body>
+</html>
